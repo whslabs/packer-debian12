@@ -1,3 +1,5 @@
+```sh
+./build.sh
 (
 name=debian12
 cp output-debian12/packer-debian12 ~/$name.qcow2
@@ -13,3 +15,4 @@ virt-install \
   --vcpus 2 \
   ;
 )
+```
