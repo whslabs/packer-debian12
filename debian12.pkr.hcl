@@ -1,7 +1,7 @@
 packer {
   required_plugins {
     qemu = {
-      version = ">= 1.0.9"
+      version = ">= 1.1.0"
       source  = "github.com/hashicorp/qemu"
     }
   }
@@ -13,8 +13,6 @@ source "qemu" "debian12" {
   cpus              = 4
   disk_size         = "100G"
   efi_boot          = true
-  efi_firmware_code = "/run/libvirt/nix-ovmf/OVMF_CODE.fd"
-  efi_firmware_vars = "/run/libvirt/nix-ovmf/OVMF_VARS.fd"
   http_directory    = "preseed"
   iso_checksum      = "915bc47370ac7ecc35984c36be280c0b094bf79b0f1f9755142cc2f41384a0e4"
   iso_url           = "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/mini.iso"

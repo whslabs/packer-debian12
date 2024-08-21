@@ -4,7 +4,7 @@
 name=debian12
 cp output-debian12/packer-debian12 ~/$name.qcow2
 virt-install \
-  --boot uefi,loader=/run/libvirt/nix-ovmf/OVMF_CODE.fd \
+  --boot loader=/usr/share/edk2/ovmf/OVMF_CODE.fd \
   --connect qemu:///system \
   --disk ~/$name.qcow2 \
   --import \
