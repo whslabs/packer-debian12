@@ -14,7 +14,7 @@ source "qemu" "debian12" {
   disk_size         = "100G"
   efi_boot          = true
   http_directory    = "preseed"
-  iso_checksum      = "915bc47370ac7ecc35984c36be280c0b094bf79b0f1f9755142cc2f41384a0e4"
+  iso_checksum      = "402c0b876c7da0f5682a68a6705636592aa217fe934a64ee36f731e9afc6b99f"
   iso_url           = "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/mini.iso"
   memory            = 4096
   ssh_password      = "packer"
