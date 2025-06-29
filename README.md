@@ -18,5 +18,5 @@ virt-install \
 ```
 # Mozc
 ```sh
-sudo apt-get install ibus-mozc
+sudo apt-get install -y ibus-mozc
 ```
